@@ -1,0 +1,26 @@
+{
+  "name": "Web Search Connector",
+  "description": "Search the web via multiple providers and return structured results",
+  "type": "connector",
+  "complexity": "beginner",
+  "features": [
+    "Multi-provider web search",
+    "Structured result format",
+    "Rate limiting",
+    "Result caching",
+    "Safe search filtering"
+  ],
+  "env_vars": [
+    "SEARCH_API_KEY",
+    "SEARCH_PROVIDER",
+    "AGENT_NAME"
+  ],
+  "icon": "🔍",
+  "connector": {
+    "service_name": "web-search",
+    "auth_type": "api_key",
+    "capabilities": [
+      "search"
+    ]
+  }
+}
