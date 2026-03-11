@@ -4,13 +4,15 @@
   "description": "Web search connector for Agenxia agents",
   "main": "api/search.js",
   "scripts": {
-    "dev": "vercel dev",
-    "start": "node api/search.js"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "dependencies": {
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^3.3.0",
+    "fastify": "^5.3.0"
   },
   "engines": {
-    "node": "18.x"
-  }
+    "node": ">=18"
+  },
+  "type": "module"
 }
